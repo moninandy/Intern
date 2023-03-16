@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
+
+<script src="header.js"></script>
+<style>
+  .btn
+  {
+    width: -webkit-fill-available;
+  }
+  .bt1{
+    width: -webkit-fill-available;
+  }
+  
+</style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand h1 dispaly-1 nav-link" href="file:///C:/project3/WynkMusic.html"><img src="images/Wynk.png" alt="logo" width="50" height="50">Wynk Music</a>
+          <form class="d-flex justify between">
+              <button class="btn text-white h1" w="30" type="button"><i class="fa fa-search"></i>Search</button>
+              <input type="text"  placeholder="search" >
+              </button>
+
+            </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active " href="file:///C:/project3/home.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" href="file:///C:/project3/comdey.html">Podcasts</a>
+                <!--ul class="dropdown-menu" >
+                  <li><a href="" class="dropdown-item"> Comdey</a></li>
+                  <li><a href="" class="dropdown-item"> TV and flim</a></li>
+                  <li><a href="" class="dropdown-item"> Health & Fitness</a></li>
+                  <li><a href="" class="dropdown-item"> News & Politics</a></li>
+                  </ul-->
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="file:///C:/project3/Download App.html">DownloadApp</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="file:///C:/project3/SIGNIn.html">SIGN IN</a>
+              </li>
+              <button onclick="myFunction()">
+                <i class="fa fa-sun-o"></i></button>
+
+              
+            </ul>
+
+            
+          </div>
+        </div>
+      </nav>
+
+
+      <audio  id="my_Audio">
+      <source src ="Audio/Raataan Lambiyan - Shershaah 128 Kbps.mp3" id="mp3Player"></audio>
+      <button class="btn" onClick="playMyAudio()"><i class="fa fa-play-circle fa-5x" style="margin-top: 90px;"></i></button>
+      <button  class="bt1" onclick="pauseMyAudio()"><i class="fa fa-pause-circle fa-5x"></i></button>
+      <!--button  onclick="prevNext()"><i class=" fa fa-step-backward fa-2x"></i></i></button-->
+      
+      <script>
+       /* function playMyAudio(){
+          document.getElementById("myAudio").play();
+        }
+        function pauseMyAudio(){
+          document.getElementById("myAudio").pause();
+          
+        
+        }
+        /*function prevNext(){
+          document.getElementById("mp3player").load();
+        }*/
+
+        function chageSong(url) {
+    var audioPlayer = document.getElementById("mp3Player");
+    audioPlayer.src = url
+    document.getElementById("my_Audio").load();
+  }
+        
+        </script>
+
+<div class="buttons">
+  <div class="prev-track" onclick="prevTrack()">
+    <i class="fa fa-step-backward fa-2x"></i>
+  </div>
+  <div class="playpause-track" onclick="playpauseTrack()">
+    <i class="fa fa-play-circle fa-5x"></i>
+  </div>
+  <div class="next-track" onclick="nextTrack()">
+    <i class="fa fa-step-forward fa-2x"></i>
+  </div>
+
+      
+        <!--audio id="my_Audio">
+            <source id="mp3Player"src="Audio/Raataan Lambiyan - Shershaah 128 Kbps.mp3" type="audio/mpeg">
+        </audio>
+        <div  style="margin-top: 90px; display: flex; justify-content: center;">
+          <i class="fa fa-play-circle fa-5x" id="playpause-track"></i>
+        </div-->
+        
+    
+</body>
+</html>

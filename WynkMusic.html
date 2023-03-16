@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WynkMusic</title>
+    <link rel="stylesheet" href="style.css">
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
+
+<script src="header.js"></script>
+<script>
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+    // console.log("hi);
+  }
+
+  function changeSong(url) {
+    var audioPlayer = document.getElementById("mp3Player");
+    audioPlayer.src = url
+    document.getElementById("my_Audio").load();
+  }
+  </script>
+  </head>
+<body>
+    
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand h1 dispaly-1 nav-link" href="file:///C:/project3/WynkMusic.html"><img style="margin-right: 20px;"src="images/Wynk.png" alt="logo" width="50" height="50">    WynkMusic</a>
+          <form class="d-flex justify between">
+              
+              <input style="border-radius:30px; height:50px;" type="text"  placeholder= " search" ><i class="fa fa-search"></i>
+              
+
+            </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active " href="file:///C:/project3/home.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" href="file:///C:/project3/comdey.html">Podcasts</a>
+                <!--ul class="dropdown-menu" >
+                  <li><a href="" class="dropdown-item"> Comdey</a></li>
+                  <li><a href="" class="dropdown-item"> TV and flim</a></li>
+                  <li><a href="" class="dropdown-item"> Health & Fitness</a></li>
+                  <li><a href="" class="dropdown-item"> News & Politics</a></li>
+                  </ul-->
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="file:///C:/project3/Download App.html">DownloadApp</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="file:///C:/project3/SIGN%20IN.html">SIGN IN</a>
+              </li>
+              <button  onclick="myFunction()">
+                <i class="fa fa-sun-o" style="color:white;"></i></button>
+
+              
+            </ul>
+
+            
+          </div>
+        </div>
+      </nav>
+
+      
+      <div class="h1" style="margin-top: 80px; position: absolute;" >New Releases</div>
+      
+      <div class="carousel" data-flickity='{"autoPlay":1500 ,"wrapAround":true}'>
+        
+        <div class="carousel-cell" style="background-image: url('images/malare.jpg')" onclick="changeSong('Audio/Malare Song.mp3') "></div>
+    
+        <div class="carousel-cell" style="background-image: url('images/pala\ pali.jpg')" onclick="changeSong('Audio/pala pali new tone.mp3') "></div>
+
+        <div class="carousel-cell" style="background-image: url('images/firstlove.jpg')" onclick="changeSong('Audio/nj first love.mp3')"></div>
+        
+    
+        <div class="carousel-cell" style="background-image: url('images/dharshana.jpg')" onclick="changeSong('Audio/Hridayam - Dharshana.mp3')"></div>
+        
+        <div class="carousel-cell" style="background-image: url('images/ollueru.jpg')" onclick="changeSong('Audio/Ollulleru(PaglaSongs).mp3')"></div>
+    
+        <div class="carousel-cell" style="background-image: url('images/pavizha.jpg')" onclick="changeSong('Audio/Pavizha Mazha.mp3')"></div>
+    
+        <div class="carousel-cell" style="background-image: url('images/freak\ penne.jpg') "onclick="changeSong('Audio/Edi Penne Freak Penne - Oru Adaar Love ! Malayalam Song.mp3') "></div>
+    
+        <div class="carousel-cell" style="background-image: url('images/loveaction\ drama.jpg')" onclick="changeSong('Audio/On The Floor Baby - Malayalam.mp3') " ></div>
+    
+      
+    
+      </div>
+      <audio style="width:-webkit-fill-available;; margin-top: 40px;border-radius: 15px; box-shadow: 15px 15px grey;" id="my_Audio" controls autoplay>
+        <source id="mp3Player" src="Audio/Raataan Lambiyan - Shershaah 128 Kbps.mp3" type="audio/mpeg">
+        
+        </audio>
+        
+      
+      </div>
+      <div class="h1" style="margin-top: 40px; position: absolute;" >Tamil Songs </div>
+      <div class="carousel" data-flickity='{"freeScroll":true, "contain":true,"prevNextButtons":false,"pageDots":false}'>
+
+        <div class="carousel-cell" style="background-image: url('images/Arabic_Kuthu.jpg')"></div>
+
+        <div class="carousel-cell" style="background-image: url('images/vtv.jpg')" ><a href="vtv.html"><img src="images/vtv.jpg" style="border-radius: 40px; height:-webkit-fill-available; width:-webkit-fill-available;"></a></div>
+    
+        <div class="carousel-cell" style="background-image: url('images/adiyee.jpg')"></div>
+        
+        <div class="carousel-cell" style="background-image: url('images/bae.jpg')"></div>
+    
+        <div class="carousel-cell" style="background-image: url('images/thenmozhi.jpg')"></div>
+    
+        <div class="carousel-cell" style="background-image: url('images/nee\ kavidhaigala.jpg')"></div>
+    
+        <div class="carousel-cell" style="background-image: url('images/Megham-Karukatha-.jpg')"></div>
+    
+        <div class="carousel-cell" style="background-image: url('images/megamo\ aval.jpg')"></div>
+        
+        <div class="carousel-cell" style="background-image: url('images/private\ party.jpg')"></div>
+        
+        <div class="carousel-cell" style="background-image: url('images/cGANDU\ KANAMA.jpg')"></div>
+
+        <div class="carousel-cell" style="background-image: url('images/bae.jpg')"></div>
+        
+
+
+
+      </div>
+      <div class="h1" style="margin-top: 40px; position: absolute;" >Malayalam Hits </div>
+      
+      <div id="hh"class="carousel" data-flickity='{"wrapAround":true, "autoPlay":1500}'>
+
+        <div class="carousel-cell1" style="background-image: url('images/ohmshanti.jpg')"></div>
+    
+        <div class="carousel-cell1" style="background-image: url('images/freak\ penne.jpg')"></div>
+        
+        <div class="carousel-cell1" style="background-image: url('images/permam1.jpg')"></div>
+    
+        <div class="carousel-cell1" style="background-image: url('images/Duniyaa.jpg')"></div>
+    
+        <div class="carousel-cell1" style="background-image: url('images/onnakkaMunthiri.jpg')"></div>
+    
+        <div class="carousel-cell1" style="background-image: url('images/nine.jpg')"></div>
+    
+        <div class="carousel-cell1" style="background-image: url('images/loveaction\ drama.jpg')"></div>
+    
+        
+      </div>
+      
+
+      
+      <!--div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="img-wrapper">
+              <img class="d-block " src="images/shershah.jpg">
+
+              <audio controls>
+                <source src="audio/Raataan Lambiyan - Shershaah 128 Kbps.mp3">
+              </audio>
+              
+            </div>
+          </div>
+          <div class="carousel-item " data-bs-interval="2000">
+            <div class="img-wrapper">
+              <img class="d-block " src="images/uyire .jpg" alt="second image" >
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="img-wrapper">
+              <img class="d-block " src="images/kamini.jpg" alt="third image" >
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="img-wrapper">
+              <img class="d-block " src=" images/parayuvaan.jpg" alt="fourth image" alt="...">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+    
+
+          </div>
+        </div>
+      </div>
+      </div-->
+
+
+      <div  class="container">
+        <div class="banner">
+          <div class="wynk">
+          <img src="images/wynkbanner.jpg" alt="">
+          </div>
+          <div class="content" >
+            <span>Get 1 month of wynk premium</span>
+            <h1 class="H1">FREE</h1>
+          </div>
+          <div>
+            <img  src="images/kalachasma.jpg"  style="border-radius:10px; width:45%;"alt="">
+            <img  src="images/Ranjha.jpg"  style="border-radius:10px; width:40%;"alt="">
+            
+          </div>
+          <div>
+            <button class="btn4" style=" margin-bottom: 50px;">GET IT ON<a  style="text-decoration: none; color:#fff; font-size:20px ;line-height:1.8px;"href="#" ><br><i class="fa fa-play" style="color:whitesmokeS"> GOOGLE APP</a></i></button>
+            <button class="btn4">DOWNLOAD ON THE<a  style="text-decoration: none; color:#fff; font-size:20px ;line-height:1.8px;"href="#" ><br><i class="fa fa-play">PLAY STORE</a></i></button>
+        
+          </div>
+        
+        </div>
+          </div>
+        </body>
+        <hr>
+
+      
+    
+    
+      <footer class=" text-dark pt-5 pb-3 width-1">
+        <div class="container text-center text-md-left" >
+          <div class="row text-center text-md-left">
+            <div class=" col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+    
+    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Latest Albums</h5>
+    <p class="text-muted" style="text-decoration:none;">
+      <a href="#" class="text-white"style="text-decoration:none;"></a>Traumazine|  <a href="#" class="text-muted"style="text-decoration:none;"></a>Laal Singh Chaddha  | <a href="#" class="text-muted"style="text-decoration:none;"></a> Vikram Original Motion Picture Soundtrack  | <a href="#" class="text-muted" style="text-decoration:none;"></a> Shubh Vivah  | <a href="#" class="text-muted"style="text-decoration:none;"></a> Sara'S Original Motion Picture Soundtrack  |  <a href="#" class="text-white"style="text-decoration:none;"></a>Pushpa - The Rise  |<a href="#" class="text-muted"style="text-decoration:none;"></a>  Ninna Sanihake  | <a href="#" class="text-muted"style="text-decoration:none;"></a> Praktan  | <a href="#" class="text-muted"style="text-decoration:none;"></a> No Name  |  <a href="#" class="text-muted"style="text-decoration:none;"></a>Bhavartha Mauli  | <a href="#" class="text-muted"style="text-decoration:none;"></a> Yuva Sarkar  | <a href="#" class="text-muted"style="text-decoration:none;"></a> Mal mahu jiban mati  |  <a href="#" class="text-white"style="text-decoration:none;"></a>Motor bicycle  | <a href="#" class="text-muted"style="text-decoration:none;"></a> Curtain Call 2</p>
+            </div>
+    
+    
+            <div class=" col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-danger">genres</h5>
+              <p>
+                <a href="#" class="text-muted"style="text-decoration:none;">Rock Songs</a>  |<a href="#" class="text-muted"style="text-decoration:none;"> Patriotic songs </a> | <a href="#" class="text-muted"style="text-decoration:none;">Sufi Music </a>| <a href="#" class="text-muted"style="text-decoration:none;">Ghazals</a>  |  <a href="#" class="text-muted"style="text-decoration:none;">Workout Music</a>  |  <a href="#" class="text-muted"style="text-decoration:none;">Devotional Songs</a>  |  <a href="#" class="text-muted"style="text-decoration:none;">Sad Songs</a>  | <a href="#" class="text-muted"style="text-decoration:none;"> DJ Songs</a></p>
+    
+            </div>
+    
+    
+            <div class=" col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-danger">old songs</h5>
+              <p>
+                <a href="#" class="text-muted"style="text-decoration:none;">Old  Songs </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Old Hindi Songs </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Old English Songs </a> |  <a href="#" class="text-muted"style="text-decoration:none;">Old Punjabi Songs </a> |<a href="#" class="text-muted"style="text-decoration:none;"> Old Telugu Songs </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Old Tamil Songs </a> | <a href="#" class="text-muted"style="text-decoration:none;">Old Bengali Songs </a> |  <a href="#" class="text-muted"style="text-decoration:none;">Old Malayalam Songs</a>  | <a href="#" class="text-muted"style="text-decoration:none;"> Old Kannada Songs</a></p>
+        
+        </div>
+    
+    
+        <div class=" col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Top artists</h5>
+          <p> 
+            <a href="#" class="text-muted"style="text-decoration:none;">Guru Randhawa </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Arijit Singh </a> | <a href="#" class="text-muted"style="text-decoration:none;">Atif Aslam </a> |  <a href="#" class="text-muted"style="text-decoration:none;">Justin Bieber</a>  | <a href="#" class="text-muted"style="text-decoration:none;"> Gulzar </a> |  <a href="#" class="text-muted"style="text-decoration:none;">Armaan Malik</a>  |<a href="#" class="text-muted"style="text-decoration:none;"> Sidhu </a> Wala  | <a href="#" class="text-muted"style="text-decoration:none;"> Alan Walker </a> |  <a href="#" class="text-muted"style="text-decoration:none;">Udit Narayan</a>  | <a href="#" class="text-muted"style="text-decoration:none;"> Sonu Nigam </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Sid Sriram </a> |<a href="#" class="text-muted"style="text-decoration:none;">  Akhil </a> |  <a href="#" class="text-muted"style="text-decoration:none;">Darshan Raval</a>  | <a href="#" class="text-muted"style="text-decoration:none;">Shreya Ghoshal </a> | <a href="#" class="text-muted"style="text-decoration:none;">Chitra</a>|<a href="#" class="text-muted"style="text-decoration:none;"> Alka Yagnik</a></p>
+          </div>
+    
+    
+          <div class=" col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Languages</h5>
+            <p>
+              <a href="#" class="text-muted"style="text-decoration:none;">New Bengali Songs</a>  |<a href="#" class="text-muted"style="text-decoration:none;"> New Bhojpuri Songs </a> | <a href="#" class="text-muted"style="text-decoration:none;">New English Songs</a>  |  <a href="#" class="text-muted"style="text-decoration:none;">New Haryanvi Songs</a>  | <a href="#" class="text-muted"style="text-decoration:none;"> New Hindi Songs </a> | <a href="#" class="text-muted"style="text-decoration:none;">New Kannada Songs</a> | <a href="#" class="text-muted"style="text-decoration:none;"> New Marathi Songs</a>  | <a href="#" class="text-muted"style="text-decoration:none;"> New Punjabi Songs </a> | <a href="#" class="text-muted"style="text-decoration:none;">New Tamil Songs </a> | <a href="#" class="text-muted"style="text-decoration:none;">New Telugu Songs </a> |  <a href="#" class="text-muted"style="text-decoration:none;">New Odiya Songs </a>| <a href="#" class="text-muted"style="text-decoration:none;"> New Rajasthani Songs</a>  | <a href="#" class="text-muted"style="text-decoration:none;"> New Gujarati Songs </a> | <a href="#" class="text-muted"style="text-decoration:none;">New Assamese Songs</a>
+            </p>
+            </div>
+    
+    
+            <div class=" col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Latest song</h5>
+              <p>
+                <a href="#" class="text-muted"style="text-decoration:none;">Jaana </a> | <a href="#" class="text-muted"style="text-decoration:none;">Saathiya  </a>| <a href="#" class="text-muted"style="text-decoration:none;"> Memu Aagamu </a> | <a href="#" class="text-muted"style="text-decoration:none;">OOPS </a> |<a href="#" class="text-muted"style="text-decoration:none;">  Melody Roja</a>  | <a href="#" class="text-muted"style="text-decoration:none;">Mann Jogiya </a> | <a href="#" class="text-muted"style="text-decoration:none;">Khwab Tu</a>  | <a href="#" class="text-muted"style="text-decoration:none;">Pyaari Teri Yaari </a> |<a href="#" class="text-muted"style="text-decoration:none;">Barsaat Ho Jaaye </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Duniya  </a>|<a href="#" class="text-muted"style="text-decoration:none;"> Barsaat</a>  | <a href="#" class="text-muted"style="text-decoration:none;">  Kahāni Koyi </a> |<a href="#" class="text-muted"style="text-decoration:none;">Pari</a>  | <a href="#" class="text-muted"style="text-decoration:none;"> Tuu  </a>| <a href="#" class="text-muted"style="text-decoration:none;"> Aa Bhi Jaa</a></p>
+              </div>
+    
+    
+    
+              <div class=" col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Top songs</h5>
+                <p>
+                  <a href="#" class="text-muted"style="text-decoration:none;">Kesariya (From "Brahmastra") </a> |<a href="#" class="text-muted"style="text-decoration:none;"> Pasoori </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Raataan Lambiyan (From "Shershaah") </a> | <a href="#" class="text-muted"style="text-decoration:none;"> 295</a>  | <a href="#" class="text-muted"style="text-decoration:none;"> Baarish Aayi Hai  </a>| <a href="#" class="text-muted"style="text-decoration:none;"> Ra Ra Reddy I Am Ready </a> | <a href="#" class="text-muted"style="text-decoration:none;">Raat Jaage</a>  |<a href="#" class="text-muted"style="text-decoration:none;"> Ranjha (From "Shershaah")</a>  | <a href="#" class="text-muted"style="text-decoration:none;"> Vikram Title Track </a> |<a href="#" class="text-muted"style="text-decoration:none;"> Madano </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Inthandham (From "Sita Ramam (Telugu)") </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Kahan Main Gum Gaya  </a>| <a href="#" class="text-muted"style="text-decoration:none;">Arabic Kuthu (From "Beast")  </a> | <a href="#" class="text-muted"style="text-decoration:none;">Baarish Ban Jaana </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Ye Teri Meri Kahani (ft. Sumedha Karmahe)</a></p>
+                </div>
+    
+    
+                <div class="col-md-4 col-lg-3 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-danger">top searched lyrics</h5>
+                  <p>
+                    <a href="#" class="text-muted"style="text-decoration:none;">Bom Diggy Diggy</a>  | <a href="#" class="text-muted"style="text-decoration:none;"> Machayenge</a>  | <a href="#" class="text-muted"style="text-decoration:none;">Tera Yaar Hoon Main </a> |  <a href="#" class="text-muted"style="text-decoration:none;">Kar Gayi Chull </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Morni Banke</a>  | <a href="#" class="text-muted"style="text-decoration:none;">Chalti Hai Kya 9 Se 12 </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Sunny Sunny</a>  |  <a href="#" class="text-muted"style="text-decoration:none;">Gallan Goodiyaan </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Sooraj Ki Baahon Mein </a> | <a href="#" class="text-muted"style="text-decoration:none;"> Hawayein</a>  |  <a href="#" class="text-muted"style="text-decoration:none;">Senorita</a>  | <a href="#" class="text-muted"style="text-decoration:none;"> Roke Na Ruke Naina </a></p>
+                  </div>
+          </div>
+        </div>
+        <hr>
+        <div style="display:flex; justify-content: space-between;">
+          <div>
+            <a class="text-danger" style="text-decoration:none; font-weight:bold" href="#">ABOUT US</a>
+            <a class="text-danger"style="text-decoration:none;font-weight:bold" href="#">|ADVERTISE WITH US </a>
+            <a  class="text-danger"style="text-decoration:none;font-weight:bold"href="#">|PRIVACY POLICY</a>
+            <a  class="text-danger"style="text-decoration:none;font-weight:bold"href="#">|TERMS OF USE</a>
+            <a class="text-danger"style="text-decoration:none;font-weight:bold" href="#">|CONTACT US</a>
+            <a  class="text-danger"style="text-decoration:none;font-weight:bold"href="#">|FEED BACK</a>
+            <a class="text-danger"style="text-decoration:none;font-weight:bold" href="#">|HELLOTUNES</a>
+          </div>  
+          <div >
+            <a class="text-danger" style="text-decoration:none; font-weight:bold;margin-right: 60px;" href="https://about.facebook.com/"><i class="fa fa-facebook fa-lg"></i></a>
+            <a class="text-danger"style="text-decoration:none;font-weight:bold ;margin-right: 60px;" href="https://twitter.com/i/flow/login"><i class="fa fa-twitter fa-lg"></i></a>
+            <a  class="text-danger"style="text-decoration:none;font-weight:bold; margin-right: 60px;"href="https://www.instagram.com/"><i class="fa fa-instagram fa-lg"></i></a>
+            <a  class="text-danger"style="text-decoration:none;font-weight:bold; margin-right: 20px;"href="https://www.youtube.com/results?search_query=wynk+music"><i class="fa  fa-youtube  fa-lg"></i></a>
+    
+          </div>
+          </div>
+          
+          <hr>
+          <div style="display:flex; justify-content: space-between;"> 
+            <div >
+            <p class="text-muted" style="margin-right:40px;"><small>Wynk Music is the one-stop music app for the latest to the greatest songs that you love <br>Play your favourite music online for free or download   mp3. Enjoy from over 20 Million Hindi, English, Bollywood, Regional, Latest, Old songs and more.</small></p>
+            </div>
+            <div >
+              <p class="text-muted">2022 © All rights reserved | Airtel Digital Limited</p>
+            </div>
+    
+          </div>
+          
+        
+        </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
